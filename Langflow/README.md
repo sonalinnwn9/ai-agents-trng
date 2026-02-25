@@ -7,7 +7,7 @@ The Word Search Solver takes an image of a word search puzzle, uses the Llama 3.
 
 The flow is defined in the  `WordSearchPuzzle-Solver.json` file and visullay represnterd in the  diagram below :
 
-![Lanflow-diagram](langflow-diagram-wordsearchpuzzle.png)
+![Langflow-diagram](assets/langflow-diagram-wordsearchpuzzle.png)
 
 ## Input :
 ![Input](assets/User-input-wordsearchpuzzle.png)
