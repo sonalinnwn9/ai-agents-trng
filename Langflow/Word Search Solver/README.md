@@ -10,10 +10,10 @@ The flow is defined in the  `WordSearchPuzzle-Solver.json` file and visullay rep
 ![Langflow-diagram](assets/langflow-diagram-wordsearchpuzzle.png)
 
 ## Input :
-![Input](assets/User-input-wordsearchpuzzle.png)
+![Input](assets/inputword.png)
 
 ## Output:
-![Output](assets/output-wordsearchpuzzle.png)
+![Output](assets/output.png)
 
 ## 🛠️ Flow structure
 
