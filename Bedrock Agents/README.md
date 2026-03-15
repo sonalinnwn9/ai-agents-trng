@@ -16,7 +16,7 @@ agent functions reliably.
 ![Input](assets/SystemOverview_Agent.png)
 
 ## High Level Serverless Architcture
-![Input](HL_Serverless_Arch.png)
+![Input](assets/HL_Serverless_Arch.png)
 
 ## features :
 • Dynamic filtering 
@@ -24,38 +24,41 @@ agent functions reliably.
 • Contextual Assistance 
 
 ## Agent Config: Agent Name, Agent ARN
-    ![Input](assets/1AgentOverview.png)
+
+![Input](assets/1AgentOverview.png)
 
 ## Action Groups for Lambda call
-    ![Input](assets/2ActionGroups.png)
+![Input](assets/2ActionGroups.png)
+
  
 ## KB for RAG
-    ![Input](assets/KB.png)
+![Input](assets/KB.png)
 
 ## S3 bucket location for uploaded gift wrapping file
-    ![Input](assets/KB_giftwrapping.png)
+![Input](assets/KB_giftwrapping.png)
 
 ## DynamoDB table
 
-### product table
-    ![Input](assets/Table_product.png)
+### Product table
+   ![Input](assets/Table_product.png)
 
-### cart table
-    ![Input](assets/CartTable.png)
+### Cart table
+   ![Input](assets/CartTable.png)
 
 
 ## Tesing the AGent functionality
 
-### initiating the product discovery flow
-    ![Input](assets/Test1.png)
+### Initiating the product discovery flow
+### asks for  filter – occasion or category 
+   ![Input](assets/prompt1_test.png)
 
 
 
 Parses the occasion parameter and calls the lambda function to generate a tailored 
 product recommendation from the database 
-    ![Input](assets/parses_prodrecom.png)
+   ![Input](assets/parses_prodrecom.png)
 
-    ![Input](assets/parses_prodrecom2.png)
+   ![Input](assets/parses_prodrecom2.png)
 
 
 
@@ -67,31 +70,31 @@ Establishes User Identity for Cart persistence
 Recommends a related product after adding the selected product. It shows executing 
 cross-user collaborative filtering 
 
-    ![Input](assets/recom_related.png)
+   ![Input](assets/recom_related.png)
 
-    ![Input](assets/showcart_aterbothadded.png)
+   ![Input](assets/GET_personalise_recom.png)
 
-    
+   ![Input](assets/finalisecart_state.png)
+
+   
 
 Finalising Cart additions and displaying State
 
-    ![Input](assets/finalisecart_postcart.png)
+   ![Input](assets/finalisecart_postcart.png)
 
-    ![Input](assets/finalisecart_state.png)
+   ![Input](assets/showcart_aterbothadded.png)
+
+  
 
 
 
 Enhances the Experience with RAG and Knowledge Bases as it asks about gift wrapping
-    ![Input](assets/KB_giftwrapping.png)
 
-
-    ![Input](assets/RAG_KB_Giftwrappingsuggest.png)
-
-
-
+   ![Input](assets/RAG_KB_Giftwrappingsuggest.png)
+  
 Retrieval from KB which has s3 bucket as Data Source 
     
-    ![Input](assets/fromKB1.png)
+   ![Input](assets/fromKB1.png)
  
  
 Concludes the conversation with a polite message and wishes them
@@ -100,10 +103,10 @@ Concludes the conversation with a polite message and wishes them
 
 ## Verifying the Backend DynamoDB State :
 
-For the current user sonali@bb.com 2 products are added. To provide personalise 
+For the current user sonali@bb.com , 2 products are added. To provide personalise 
 recommendation, it refers another user’ cart details snn@yy.com 
 
-    ![Input](assets/verfiying.png)
+   ![Input](assets/verfiying.png)
 
 ##  Troubleshooting checklist : 
 1) Lambda function permissions to enable the agent to do function call
@@ -120,6 +123,6 @@ is important
 
 ## Project summary and Technical Outcome :
 
-   ![Input](assets/Tech%20Outcomes.png.png)
+   ![Input](assets/Tech%20Outcomes.png)
 
 
